@@ -1,6 +1,6 @@
 const express = require('express');
 const next = require('next');
-const LeagueJS = require('leagueJS');
+const LeagueJS = require('leaguejs');
 const StaticDataCache = require('./lib/staticData');
 
 const dev = process.env.NODE_ENV !== 'production';
