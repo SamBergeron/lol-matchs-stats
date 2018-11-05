@@ -1,10 +1,10 @@
 const express = require('express');
 const next = require('next');
 const LeagueJS = require('leagueJS');
-const StaticDataCache = require('./staticData');
+const StaticDataCache = require('./lib/staticData');
 
 const dev = process.env.NODE_ENV !== 'production';
-const apiKey = process.env.LEAGUE_API_KEY || 'RGAPI-22c71432-5bc8-4119-a799-bbc3ff75f162';
+const apiKey = process.env.LEAGUE_API_KEY;
 const platform = process.env.LEAGUE_API_PLATFORM_ID || 'na1';
 
 const DataDragonHelper = require('leaguejs/lib/DataDragon/DataDragonHelper');

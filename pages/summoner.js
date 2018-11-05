@@ -122,7 +122,7 @@ const SummonerPage = (props) => {
                         <div class="col-3 text-center"><h4>Items</h4></div>
                     </div>
                     {props.matches.map((match) => (
-                        <SummonerTableRow match={match} url={props.ddUrl}/>
+                        <SummonerTableRow key={match.gameId} match={match} url={props.ddUrl}/>
                     ))}
                 </div>
             </div>
